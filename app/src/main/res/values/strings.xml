@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">P5CAV</string>
+    <string name="usuarioHint">Usuario</string>
+    <string name="empezarPartidaBtn">EMPEZAR PARTIDA</string>
+    <string name="jugarBtn">JUGAR</string>
+    <string name="puntos">puntos</string>
+    <string name="tuMejor">YOUR BEST!</string>
+    <string name="cambiarUsuarioBtn">CAMBIAR USUARIO</string>
+    <string name="leaderBoardBtn">LEADERBOARD</string>
+    <string name="volverAlMenu">VOLVER AL MENU</string>
+</resources>

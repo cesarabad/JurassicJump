@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">P5CAV</string>
+    <string name="usuarioHint">Username</string>
+    <string name="empezarPartidaBtn">START GAME</string>
+    <string name="jugarBtn">PLAY</string>
+    <string name="puntos">points</string>
+    <string name="tuMejor">YOUR BEST!</string>
+    <string name="cambiarUsuarioBtn">SWITCH USER</string>
+    <string name="leaderBoardBtn">LEADERBOARD</string>
+    <string name="volverAlMenu">BACK TO MENU</string>
+</resources>

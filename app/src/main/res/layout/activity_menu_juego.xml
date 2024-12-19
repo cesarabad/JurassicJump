@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#BBBDBC"
+    tools:context=".vistas.navegacion.MenuJuego">
+
+    <TextView
+        android:id="@+id/userLogeadoOutput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-20dp"
+        android:shadowColor="#DCDCDC"
+        android:shadowDx="5"
+        android:shadowDy="5"
+        android:shadowRadius="5"
+        android:textColor="#313131"
+        android:textSize="34sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gameLogoGameplay" />
+
+    <ImageView
+        android:id="@+id/gameLogoGameplay"
+        android:layout_width="348dp"
+        android:layout_height="272dp"
+        android:layout_marginTop="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/jurassicjump_logo" />
+
+    <Button
+        android:id="@+id/empezarPartidaBtn"
+        android:layout_width="269dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="#BE33A931"
+        android:outlineAmbientShadowColor="#ADADAD"
+        android:outlineSpotShadowColor="#ABABAB"
+        android:shadowColor="#626262"
+        android:shadowDx="7"
+        android:shadowDy="6"
+        android:shadowRadius="10"
+        android:text="@string/empezarPartidaBtn"
+        android:textColor="#FDFDFD"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/userLogeadoOutput" />
+
+    <Button
+        android:id="@+id/cambiarUsuarioBtn"
+        android:layout_width="269dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="#BE33A931"
+        android:outlineAmbientShadowColor="#ADADAD"
+        android:outlineSpotShadowColor="#ABABAB"
+        android:scaleX="1"
+        android:scaleY="1"
+        android:shadowColor="#626262"
+        android:shadowDx="7"
+        android:shadowDy="6"
+        android:shadowRadius="10"
+        android:text="@string/cambiarUsuarioBtn"
+        android:textColor="#FDFDFD"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/empezarPartidaBtn" />
+
+    <Button
+        android:id="@+id/leaderBoardBtn"
+        android:layout_width="269dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="#BE045902"
+        android:outlineAmbientShadowColor="#ADADAD"
+        android:outlineSpotShadowColor="#ABABAB"
+        android:shadowColor="#626262"
+        android:shadowDx="7"
+        android:shadowDy="6"
+        android:shadowRadius="10"
+        android:text="@string/leaderBoardBtn"
+        android:textColor="#FDFDFD"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cambiarUsuarioBtn" />
+</androidx.constraintlayout.widget.ConstraintLayout>

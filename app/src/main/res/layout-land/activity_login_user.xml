@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/loginbackground"
+    tools:context=".vistas.navegacion.LoginUser">
+
+    <ImageView
+        android:id="@+id/gameLogo"
+        android:layout_width="348dp"
+        android:layout_height="272dp"
+        android:layout_marginEnd="60dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/jurassicjump_logo" />
+
+    <EditText
+        android:id="@+id/usernameInput"
+        android:layout_width="253dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="20dp"
+        android:background="#D033A831"
+        android:ems="10"
+        android:hint="@string/usuarioHint"
+        android:inputType="text"
+        android:outlineAmbientShadowColor="#3C3C3C"
+        android:outlineSpotShadowColor="#3C3C3C"
+        android:padding="10sp"
+        android:shadowColor="#494949"
+        android:shadowDx="7"
+        android:shadowDy="6"
+        android:shadowRadius="10"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/userAvatar"
+        app:layout_constraintStart_toEndOf="@+id/userAvatar"
+        app:layout_constraintTop_toTopOf="@+id/userAvatar" />
+
+    <ImageView
+        android:id="@+id/userAvatar"
+        android:layout_width="101dp"
+        android:layout_height="74dp"
+        android:layout_marginStart="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gameLogo"
+        app:srcCompat="@drawable/userlogo" />
+
+    <Button
+        android:id="@+id/jugarBtn"
+        android:layout_width="271dp"
+        android:layout_height="62dp"
+        android:backgroundTint="#BE33A931"
+        android:outlineAmbientShadowColor="#818181"
+        android:outlineSpotShadowColor="#787878"
+        android:shadowColor="#6F6F6F"
+        android:shadowDx="7"
+        android:shadowDy="6"
+        android:shadowRadius="10"
+        android:text="@string/jugarBtn"
+        android:textColor="#FDFDFD"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/usernameInput"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/usernameInput"
+        app:layout_constraintTop_toTopOf="@+id/usernameInput" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

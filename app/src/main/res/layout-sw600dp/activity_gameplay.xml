@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#BBBDBC"
+    tools:context=".vistas.GamePlay">
+
+    <ImageView
+        android:id="@+id/fondoPartida"
+        android:layout_width="800dp"
+        android:layout_height="546dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:rotationY="180"
+        android:scaleX="3"
+        android:scaleY="3"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/background" />
+
+    <ImageView
+        android:id="@+id/dinosaurioGif"
+        android:layout_width="144dp"
+        android:layout_height="108.72dp"
+        android:rotationY="180"
+        android:scaleX="3"
+        android:scaleY="3"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.15"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5"
+        app:srcCompat="@drawable/dinosaurio" />
+
+    <ImageView
+        android:id="@+id/rocaPng"
+        android:layout_width="94dp"
+        android:layout_height="86.6dp"
+        android:scaleX="3"
+        android:scaleY="3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/fondoPartida"
+        app:layout_constraintHorizontal_bias="1.4"
+        app:layout_constraintStart_toStartOf="@+id/fondoPartida"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.52"
+        app:srcCompat="@drawable/rocaobstaculo" />
+
+    <ImageView
+        android:id="@+id/cactusPng"
+        android:layout_width="76.76dp"
+        android:layout_height="139dp"
+        android:scaleX="3"
+        android:scaleY="3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/fondoPartida"
+        app:layout_constraintHorizontal_bias="1.4"
+        app:layout_constraintStart_toStartOf="@id/fondoPartida"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5"
+        app:srcCompat="@drawable/cactus" />
+
+    <ImageView
+        android:id="@+id/arbolPng"
+        android:layout_width="160.862dp"
+        android:layout_height="180.596dp"
+        android:scaleX="3"
+        android:scaleY="3"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/fondoPartida"
+        app:layout_constraintHorizontal_bias="2"
+        app:layout_constraintStart_toStartOf="@id/fondoPartida"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/arbol" />
+
+    <ImageView
+        android:id="@+id/pajarosPng"
+        android:layout_width="291dp"
+        android:layout_height="104.5dp"
+        android:scaleX="3"
+        android:scaleY="3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/fondoPartida"
+        app:layout_constraintHorizontal_bias="3"
+        app:layout_constraintStart_toStartOf="@id/fondoPartida"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.100000024"
+        app:srcCompat="@drawable/pajaros" />
+
+    <ImageView
+        android:id="@+id/esqueletoPng"
+        android:layout_width="192dp"
+        android:layout_height="112.8dp"
+        android:scaleX="3"
+        android:scaleY="3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/fondoPartida"
+        app:layout_constraintHorizontal_bias="2"
+        app:layout_constraintStart_toStartOf="@id/fondoPartida"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.50"
+        app:srcCompat="@drawable/esqueleto" />
+
+    <ImageView
+        android:id="@+id/bolaPng"
+        android:layout_width="69dp"
+        android:layout_height="73dp"
+        android:scaleX="3"
+        android:scaleY="3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/fondoPartida"
+        app:layout_constraintHorizontal_bias="2"
+        app:layout_constraintStart_toStartOf="@id/fondoPartida"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.69"
+        app:srcCompat="@drawable/boladesierto" />
+
+    <Button
+        android:id="@+id/saltarBtn"
+        android:layout_width="1070dp"
+        android:layout_height="1801dp"
+        android:background="#00FFFFFF"
+        android:textSize="24sp"
+        android:visibility="visible"
+        app:cornerRadius="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/fondoPartida"
+        app:layout_constraintStart_toStartOf="@id/fondoPartida"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/puntuacionOutput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textColor="#46424C"
+        android:textSize="100sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
